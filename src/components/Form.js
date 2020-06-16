@@ -1,31 +1,31 @@
 import React from 'react';
 
-class  Header extends React.Component {
-
-constructor(props){
-  super(props)
-  this.state = {
-      url:'',
-  }
-}
+class  Form extends React.Component {
 
 eventListener(e){
-      this.setState({ ...this.state, inputValue : e.target.value}) 
+      this.props.onChange( 'query',e.target.value) 
 }
 
 
   render(){
+    
     return(
       <div>
-        <h1>RESTy</h1>
+
         <form>
+        <h1>RESTy</h1>
           <label>Choose One</label>
-          <input type = "text" value = {this.state.inputValue} onChange = {this.eventListener.bind(this)} ></input>
+          <input 
+          type = 'text'
+           value = {this.props.value} 
+           onChange = {this.eventListener.bind(this)}/>
+
+          
+        <button onClick={this.props.submitHandler}>Submit</button>
         </form>
-        <button>Submit</button>
       </div>
     )
   }
 }
 
-export default Header;
+export default Form;

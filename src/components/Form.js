@@ -3,7 +3,8 @@ import React from "react";
  function Form (props) {
     return (
       <div className="form-input">
-          <p>Untitled Request</p>
+          <label>URL :</label>
+
           <input
             type="text"
             value={props.query}
@@ -16,7 +17,10 @@ import React from "react";
             <option value='put'>PUT</option>
             <option value='delete'>DELETE</option>
           </select>
-          <button onClick={props.submitHandler}>Submit</button>
+
+          <button 
+          onClick={props.submitHandler}>
+            Submit</button>
         </div>
       </div>
     );

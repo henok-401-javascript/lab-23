@@ -1,5 +1,6 @@
 import React from 'react';
-export default function Result(props){
+
+ function Result(props){
 return (
   <div className={props.className} style={props.style}>
     <div className='header'>
@@ -11,3 +12,5 @@ return (
 </div>
 );
 }
+
+export default Result;

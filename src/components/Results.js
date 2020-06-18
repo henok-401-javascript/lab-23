@@ -3,11 +3,15 @@ import React from 'react';
  function Result(props){
 return (
   <div className={props.className} style={props.style}>
+    
     <div className='header'>
-      <pre>{JSON.stringify(props.header, null, props.tabwidth)}</pre>
-</div>
+
+      <p className="headerClass">{JSON.stringify(props.header, null, props.tabwidth)}</p>
+
+
     <div className='body'>
-      <pre>{JSON.stringify(props.body, null, props.tabwidth)}</pre>
+      <p className="bodyClass">{JSON.stringify(props.body, null, props.tabwidth)}</p>
+  </div>
   </div>
 </div>
 );

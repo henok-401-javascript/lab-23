@@ -44,7 +44,7 @@ class RestSearcher extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="resty-body">
         <Form
           query={this.state.query}
           handleUrl={this.handleUrl.bind(this)}

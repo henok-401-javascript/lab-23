@@ -1,31 +1,29 @@
-import React from 'react';
+import React from "react";
 
-class  Form extends React.Component {
+ function Form (props) {
+    return (
+      <div className="form-input">
 
-eventListener(e){
-      this.props.onChange( 'query',e.target.value) 
-}
+        <label>URL :</label>
+          <input className="input-field"
+            type="text"
+            value={props.query}
+            onChange={props.handleUrl}
+          />
+          <div>
+          <select className="lableButton" onChange={props.onMethodHandler}>
+            <option value='get'>GET</option>
+            <option value='post'>POST</option>
+            <option value='put'>PUT</option>
+            <option value='delete'>DELETE</option>
+          </select>
 
-
-  render(){
-    
-    return(
-      <div>
-
-        <form>
-        <h1>RESTy</h1>
-          <label>Choose One</label>
-          <input 
-          type = 'text'
-           value = {this.props.value} 
-           onChange = {this.eventListener.bind(this)}/>
-
-          
-        <button onClick={this.props.submitHandler}>Submit</button>
-        </form>
+          <button className="button"
+          onClick={props.submitHandler}>
+            Submit</button>
+        </div>
       </div>
-    )
+    );
   }
-}
 
-export default Form;
+  export default Form;

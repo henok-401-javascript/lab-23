@@ -1,1 +1,11 @@
 
+$back-ground : #2220298e;
+$white:#ffffff;
+
+header{
+  height: 15vh;
+  border: 1px solid white;
+  background-color:$back-ground;
+  color:$white;
+  text-align: center;
+}

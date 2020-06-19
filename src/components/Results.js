@@ -6,11 +6,11 @@ return (
     
     <div className='header'>
 
-      <p className="headerClass">{JSON.stringify(props.header, null, props.tabwidth)}</p>
+      <pre className="headerClass">{JSON.stringify(props.header, null, props.tabwidth)}</pre>
 
 
     <div className='body'>
-      <p className="bodyClass">{JSON.stringify(props.body, null, props.tabwidth)}</p>
+      <pre className="bodyClass">{JSON.stringify(props.body, null, props.tabwidth)}</pre>
   </div>
   </div>
 </div>

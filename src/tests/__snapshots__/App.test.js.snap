@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapShot test It can Successfully check by using snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="resty-body"
+  >
+    <div
+      className="form-input"
+    >
+      <header>
+        <h1>
+          RESTy
+        </h1>
+      </header>
+      <input
+        className="input-field"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <div>
+        <select
+          className="lableButton"
+          onChange={[Function]}
+        >
+          <option
+            value="get"
+          >
+            GET
+          </option>
+          <option
+            value="post"
+          >
+            POST
+          </option>
+          <option
+            value="put"
+          >
+            PUT
+          </option>
+          <option
+            value="delete"
+          >
+            DELETE
+          </option>
+        </select>
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <div
+      className="responseBody"
+    >
+      <div
+        className="header"
+      >
+        <pre
+          className="headerClass"
+        >
+          {}
+        </pre>
+        <div
+          className="body"
+        >
+          <pre
+            className="bodyClass"
+          >
+            {}
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

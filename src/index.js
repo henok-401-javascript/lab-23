@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {browserRouter} from 'react-router-dom';
 
 import App from './App.js';
 
 class Main extends React.Component {
     render() {
-        return <App />;
+        return (
+            <browserRouter>
+            <App />
+            </browserRouter>
+        );
     }
 }
 

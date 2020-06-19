@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR]()
+- [submission PR](https://codesandbox.io/s/github/henok-401-javascript/lab-23/pull/3)
 
 
 #### How to initialize/run your application (where applicable)

@@ -3,8 +3,10 @@ import React from "react";
  function Form (props) {
     return (
       <div className="form-input">
-
-        <label>URL :</label>
+        
+ <header>
+ <h1 >RESTy</h1>
+ </header>
           <input className="input-field"
             type="text"
             value={props.query}

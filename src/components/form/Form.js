@@ -4,16 +4,14 @@ import React from "react";
     return (
       <div className="form-input">
         
- <header>
- <h1 >RESTy</h1>
- </header>
+
           <input className="input-field"
             type="text"
             value={props.query}
             onChange={props.handleUrl}
           />
           <div>
-          <select className="lableButton" onChange={props.onMethodHandler}>
+          <select onChange={props.onMethodHandler}>
             <option value='get'>GET</option>
             <option value='post'>POST</option>
             <option value='put'>PUT</option>

@@ -7,6 +7,7 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/henok-401-javascript/lab-23/pull/5)
+- [netlify](https://keen-minsky-14919a.netlify.app)
 
 
 #### How to initialize/run your application (where applicable)

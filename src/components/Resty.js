@@ -53,9 +53,7 @@ class RestSearcher extends React.Component {
    
   }
 
-  // await this.setState({
-  //   history:
-  // })
+  
   render() {
     return (
       <div className="resty-body">
